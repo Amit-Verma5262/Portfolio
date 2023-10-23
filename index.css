@@ -1,8 +1,8 @@
 .main1{
-    display: flex;
     background-color:#CADEFC;
     height: 100vh;
     width: 100%;
+    flex-wrap: wrap;
 
 }
 .main2{
@@ -34,8 +34,8 @@
     size: 2em;
 
 }
-.form-inline{
-    padding-inline-end: 50px;
+.form-inline {
+    padding-right: 10px;
 }
 .footer {
     background-color: #333;
@@ -108,4 +108,3 @@ p{
   
 
   
-
