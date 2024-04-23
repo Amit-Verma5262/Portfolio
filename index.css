@@ -1,0 +1,187 @@
+.main1{
+    background-color:#CADEFC;
+    height: 100%;
+    width: 100%;
+
+}
+.main2{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    margin: 400 100;
+    margin-right: 0px;
+}
+.landing-page {
+    background-color: #8d8ba9;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(52, 11, 11)010;
+    text-align: center;
+}
+.landing-content {
+    padding: 100px 0;
+}
+.row{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container2{
+    padding-top: 200px;
+    font-size: 1.25em;
+
+}
+.form-inline {
+    padding-right: 10px;
+}
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+    margin-right: 0px;
+    padding-right: 100px;
+}
+  
+.footer h5 {
+    color: #f5c542;
+}
+.form-inline{
+    padding-right: 0px;
+}
+.footer_row{
+    height: 120px;
+    width: 1500px;
+}
+p{
+    height: 50;
+}
+
+.navbar{
+    background-color: #DEFCF9;
+    color: #000;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.form1{
+    margin-right: 10px;
+}
+.button2{
+    margin-right: 30px;
+}
+/* projects*/
+.project-section {
+    display: flex;
+    background-color: #BEFFF7;
+    padding: 60px 0;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  .section-title {
+   
+    font-size: 2rem;
+    margin-bottom: 30px;
+    content: 'center';
+  }
+  
+  .project-card {
+    margin-bottom: 30px;
+   
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+
+
+ body{
+    background-color: lightblue;
+ }
+ .back{
+    height: 100vh;
+ }
+/*form*/
+.contact{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#3551b5) ,url(howw.jpg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form1{
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 20;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.3s;
+
+}
+.button1{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,input:valid~label,input:focus~textarea,input:valid~textarea{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+.about{
+    margin: auto;
+}
+
+
+  
