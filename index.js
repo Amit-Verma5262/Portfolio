@@ -29,10 +29,10 @@ function typeHeading() {
   if (charIndex < headingText.length) {
     typedHeading.textContent += headingText[charIndex];
     charIndex++;
-    setTimeout(typeHeading, 100); // Adjust the typing speed if needed
+    setTimeout(typeHeading, 100); 
   }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(typeHeading, 2000); // Start typing after 2 seconds (adjust as needed)
+  setTimeout(typeHeading, 2000); 
 });

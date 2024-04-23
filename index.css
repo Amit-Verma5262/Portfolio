@@ -13,7 +13,7 @@
     margin-right: 0px;
 }
 .landing-page {
-    background-color: #8d8ba9;
+    background-image: linear-gradient(#add8e6,#BEFFF7);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -59,7 +59,7 @@ p{
 }
 
 .navbar{
-    background-color: #DEFCF9;
+    background-color: #add8e6;
     color: #000;
     font-size: 1rem;
     font-family: sans-serif;
@@ -107,6 +107,7 @@ p{
 
 
  body{
+    font-family: "Open Sans";
     background-color: lightblue;
  }
  .back{
@@ -183,7 +184,13 @@ input:focus~label,input:valid~label,input:focus~textarea,input:valid~textarea{
     margin: auto;
 }
 
-/*chatgpt*/
+/* CSS for adjusting landing page padding based on device size */
+@media screen and (max-width: 576px) {
+    .landing-content {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+  }
 
   
 
