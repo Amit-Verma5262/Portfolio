@@ -8,6 +8,91 @@
     height: 100vh;
 }
 
+.navbar {
+    padding: 1rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .form-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-inline .form-control {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .form-inline .btn-outline-success {
+    margin-left: 0.5rem;
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .navbar .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 0.5rem;
+    }
+  
+    .d-flex.align-items-center {
+      flex-basis: 50%;
+      justify-content: space-between;
+    }
+  
+    .d-flex.align-items-center.ml-auto {
+      flex-basis: 50%;
+      justify-content: flex-end;
+    }
+  
+    .form-inline {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  
+    .form-inline .form-control {
+      width: 70%;
+    }
+  
+    .form-inline .btn-outline-success {
+      width: 28%; 
+      margin-left: 0.5rem;
+    }
+  
+    @media (max-width: 576px) {
+      .form-inline .form-control {
+        width: 60%; 
+      }
+  
+      .form-inline .btn-outline-success {
+        width: 38%;
+      }
+    }
+  }
+  
+
 .container {
     margin: 400 100;
     margin-right: 0px;
@@ -88,20 +173,20 @@ p {
   @media (max-width: 768px) {
     .about {
       padding: 20px;
-      /* Adjust container size if necessary */
+     
     }
     
     .about .row {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column;
     }
   
     .about img {
-      max-width: 100%; /* Ensure image scales correctly */
+      max-width: 100%; 
       height: auto;
     }
   
     .about .col-lg-6, .about .col-10 {
-      margin-bottom: 20px; /* Add spacing between stacked items */
+      margin-bottom: 20px; 
     }
   }
   
@@ -110,44 +195,44 @@ p {
     display: flex;
     background-color: #a0e3db;
     padding: 60px 15px;
-    align-items: flex-start; /* Align items to the start of the section */
+    align-items: flex-start;
 }
 
 .project-header {
-    width: 25%; /* Takes up 25% of the width */
+    width: 25%; 
 }
 
 .project-cards {
-    width: 75%; /* Takes up the remaining 75% of the width */
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Increased space between cards */
-    padding-right: 10%; /* Add space to the right to ensure the last column is not at the edge */
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    gap: 30px; 
+    padding-right: 10%; 
+    box-sizing: border-box; 
 }
 
 .project-card {
-    flex: 1 1 calc(50% - 30px); /* Cards take up 50% of width minus gap */
-    max-width: calc(50% - 30px); /* Responsive width */
-    margin-bottom: 20px; /* Space between rows of cards */
+    flex: 1 1 calc(50% - 30px); 
+    max-width: calc(50% - 30px);
+    margin-bottom: 20px; 
     box-sizing: border-box;
 }
 
 .card {
     border: none;
-    border-radius: 8px; /* Rounded corners for cards */
-    overflow: hidden; /* Ensures the image fits the card */
-    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .card-img-top {
-    height: 150px; /* Adjusted image height */
-    object-fit: cover; /* Ensures image covers the area */
+    height: 150px;
+    object-fit: cover; 
 }
 
 .card-body {
@@ -161,15 +246,15 @@ p {
 
 @media (max-width: 768px) {
     .project-card {
-        flex: 1 1 calc(100% - 30px); /* Full width on medium screens with gap */
-        max-width: calc(100% - 30px); /* Responsive width */
+        flex: 1 1 calc(100% - 30px); 
+        max-width: calc(100% - 30px); 
     }
 }
 
 @media (max-width: 576px) {
     .project-card {
-        flex: 1 1 100%; /* Full width on small screens */
-        max-width: 100%; /* Responsive width */
+        flex: 1 1 100%; 
+        max-width: 100%;
     }
 }
 
@@ -253,7 +338,7 @@ input:focus~label, input:valid~label, input:focus~textarea, input:valid~textarea
     margin: auto;
 }
 
-/* CSS for adjusting landing page padding based on device size */
+
 @media screen and (max-width: 576px) {
     .landing-content {
         padding-top: 0px !important;
@@ -265,18 +350,18 @@ input:focus~label, input:valid~label, input:focus~textarea, input:valid~textarea
 @media (max-width: 576px) {
     .footer {
         padding: 20px 0;
-        padding-right: 0px; /* Adjusted padding for small screens */
+        padding-right: 0px; 
     }
 
     .footer_row {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: auto; /* Adjusted height for responsiveness */
-        width: 100%; /* Adjusted width for responsiveness */
+        height: auto;
+        width: 100%; 
     }
 
     .footer .col-sm-4 {
-        margin-bottom: 20px; /* Add spacing between columns */
+        margin-bottom: 20px;
     }
 }
