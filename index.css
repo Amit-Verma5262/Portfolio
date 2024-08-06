@@ -1,41 +1,47 @@
-.main1{
-    background-color:#CADEFC;
+.main1 {
+    background-color: #CADEFC;
     height: 100%;
     width: 100%;
-
 }
-.main2{
+
+.main2 {
     height: 100vh;
 }
-.container{
-    display: flex;
+
+.container {
     margin: 400 100;
     margin-right: 0px;
 }
+
 .landing-page {
-    background-image: linear-gradient(#add8e6,#BEFFF7);
+    background-image: linear-gradient(#add8e6, #BEFFF7);
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: rgb(52, 11, 11)010;
     text-align: center;
 }
+
 .landing-content {
     padding: 100px 0;
 }
-.row{
+
+
+.row {
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.container2{
+
+.container2 {
     padding-top: 200px;
     font-size: 1.25em;
-
 }
+
 .form-inline {
     padding-right: 10px;
 }
+
 .footer {
     background-color: #000;
     color: white;
@@ -43,104 +49,162 @@
     margin-right: 0px;
     padding-right: 100px;
 }
-  
+
 .footer h5 {
     color: #f5c542;
 }
-.form-inline{
+
+.form-inline {
     padding-right: 0px;
 }
-.footer_row{
-    height: 120px;
-    width: 1500px;
+
+.footer_row {
+    height: auto; /* Adjusted to auto for responsiveness */
+    width: 100%; /* Adjusted to 100% for responsiveness */
 }
-p{
+
+p {
     height: 50;
 }
 
-.navbar{
+.navbar {
     background-color: #add8e6;
     color: #000;
     font-size: 1rem;
     font-family: sans-serif;
     font-weight: bold;
 }
-.form1{
+
+.form1 {
     margin-right: 10px;
 }
-.button2{
+
+.button2 {
     margin-right: 30px;
 }
-/* projects*/
+/*About*/
+
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .about {
+      padding: 20px;
+      /* Adjust container size if necessary */
+    }
+    
+    .about .row {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .about img {
+      max-width: 100%; /* Ensure image scales correctly */
+      height: auto;
+    }
+  
+    .about .col-lg-6, .about .col-10 {
+      margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+  }
+  
+/* Projects */
 .project-section {
     display: flex;
-    background-color: #BEFFF7;
-    padding: 60px 0;
-    text-align: center;
-    justify-content: center;
-  }
- 
-  .section-title {
-   
-    font-size: 2rem;
-    margin-bottom: 30px;
-    content: 'center';
-  }
-  
-  .project-card {
-    margin-bottom: 30px;
-   
-  }
-  
-  .card {
+    background-color: #a0e3db;
+    padding: 60px 15px;
+    align-items: flex-start; /* Align items to the start of the section */
+}
+
+.project-header {
+    width: 25%; /* Takes up 25% of the width */
+}
+
+.project-cards {
+    width: 75%; /* Takes up the remaining 75% of the width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased space between cards */
+    padding-right: 10%; /* Add space to the right to ensure the last column is not at the edge */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.project-card {
+    flex: 1 1 calc(50% - 30px); /* Cards take up 50% of width minus gap */
+    max-width: calc(50% - 30px); /* Responsive width */
+    margin-bottom: 20px; /* Space between rows of cards */
+    box-sizing: border-box;
+}
+
+.card {
     border: none;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Ensures the image fits the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.card:hover {
     transform: scale(1.05);
-  }
-  
-  .card-title {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-img-top {
+    height: 150px; /* Adjusted image height */
+    object-fit: cover; /* Ensures image covers the area */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
     font-weight: bold;
-  }
+}
 
 
- body{
-    font-family: "Open Sans";
-    background-color: lightblue;
- }
- .back{
-    height: 100vh;
- }
-/*form*/
-.contact{
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(100% - 30px); /* Full width on medium screens with gap */
+        max-width: calc(100% - 30px); /* Responsive width */
+    }
+}
+
+@media (max-width: 576px) {
+    .project-card {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%; /* Responsive width */
+    }
+}
+
+
+/* Form */
+.contact {
     margin: 0px;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),#3551b5) ,url(howw.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),#3551b5), url(howw.jpg);
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.form1{
+
+.form1 {
     width: 90%;
     max-width: 600px;
     align-items: center;
     justify-content: center;
 }
-.input-group{
+
+.input-group {
     margin-bottom: 30px;
     position: relative;
-
 }
-input,textarea{
+
+input, textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -148,7 +212,8 @@ input,textarea{
     background: transparent;
     font-size: 15px;
 }
-label{
+
+label {
     height: 100%;
     position: absolute;
     left: 20;
@@ -157,9 +222,9 @@ label{
     color: #fff;
     cursor: text;
     transition: 0.3s;
-
 }
-.button1{
+
+.button1 {
     padding: 10px 0;
     color: #fff;
     outline: none;
@@ -168,33 +233,50 @@ label{
     width: 100%;
     cursor: pointer;
 }
-input:focus~label,input:valid~label,input:focus~textarea,input:valid~textarea{
+
+input:focus~label, input:valid~label, input:focus~textarea, input:valid~textarea {
     top: -35px;
     font-size: 14px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.row .input-group{
+
+.row .input-group {
     flex-basis: 48%;
 }
-.about{
+
+.about {
     margin: auto;
 }
 
 /* CSS for adjusting landing page padding based on device size */
 @media screen and (max-width: 576px) {
     .landing-content {
-      padding-top: 0px !important;
-      padding-bottom: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
     }
-  }
+}
 
-  
+/* Responsive adjustments for footer */
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 0;
+        padding-right: 0px; /* Adjusted padding for small screens */
+    }
 
-  
-  
+    .footer_row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto; /* Adjusted height for responsiveness */
+        width: 100%; /* Adjusted width for responsiveness */
+    }
 
-  
+    .footer .col-sm-4 {
+        margin-bottom: 20px; /* Add spacing between columns */
+    }
+}

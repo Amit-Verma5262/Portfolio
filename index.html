@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/514b772daa.js" crossorigin="anonymous"></script>
+    
 </head>
 <body >
   <!-- Navbar-->
   <div class="overflow-x-hidden">
   <nav class ="navbar navbar-expand-lg  fixed-top" id="navbar">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container" style="margin-left: 80px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#homeid"><img src="logo.png" alt="Amit Verma" height="30px" width="30px"></a>
@@ -25,6 +26,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#homeid">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutid">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projectid">Projects</a>
@@ -61,13 +65,14 @@
       </div>
   </div>
  </section>
- <div class="container col-xxl-8 px-4 py-5 about">
+ <section style="background-color: #BEFFF7;" id="aboutid" >
+ <div class="container col-xxl-8 about">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
-      <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      <img src="gallary.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
     </div>
     <div class="col-lg-6">
-      <h1 class="display-10  text-body-emphasis lh-1 mb-3">I'm pursuing my graduation from JSS Science and Technology University</h1>
+      <h1 class="display-10  text-body-emphasis lh-1 mb-3">Pursuing my graduation from JSS Science and Technology University</h1>
       <p class="lead">Currently I'm a 3rd year student of Electronics and communication branch and I'm working as RAS-Joint Secratary in IEEE-SJCE for Robotics and Automation Team.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <button type="button" class="btn btn-info btn-lg px-4 me-md-2"><a href="https://www.linkedin.com/in/amit-verma-1b5677249/" target="_blank">Linkedin</a></button>
@@ -76,56 +81,61 @@
     </div>
   </div>
 </div>
+</section>
  <!-- MY projects -->
 
  <section id="projectid" class="project-section">
-  <h2 class="section-title">My Projects</h2>
-  <div class="container-fluid row project-cards">
-   
-      <!-- Project 1 -->
-
-      <div class="col-md-6  project-card">
-        <div class="card">
-          <img src="Project1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Drum Simulator</h5>
-            <p class="card-text">This project uses HTML,CSS,Bootstrap and javascript to simulat a interactive drum simulator to give user a smooth Experience</p>
-            <a href="https://amit-verma5262.github.io/Drum/" target="_blank" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6  project-card">
-        <div class="card" >
-          <img src="Project2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">USER LOGIN</h5>
-            <p class="card-text">this project provides a user friendly login experience and developed with HTML,CSS,Javascript and REACT</p>
-            <a href="https://amit-verma5262.github.io/User_login/" target="_blank" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6  project-card">
-        <div class="card">
-          <img src="Project3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Discord Chatbot</h5>
-            <p class="card-text">this Bot is build to solve the queries of people on the Discord Server and it is hosted on Replit.</p>
-            <a href="https://replit.com/@Amit-Verma5262/ChatBot" target="_blank" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6  project-card">
-        <div class="card">
-          <img src="Project4.jpg" class="card-img-top" alt="Project 4">
-          <div class="card-body">
-            <h5 class="card-title">Event Mangement webapp</h5>
-            <p class="card-text">This is a MERN stack project which provides the information of events going on in User's nearby Location</p>
-            <a href="https://amit-verma5262.github.io/Portfolio/" target="_blank" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
+  <div class="project-header">
+    <h2 class="section-title">My Projects</h2>
   </div>
- </section>
+  <div class="project-cards" style="padding-right: ;">
+    <!-- Project 1 -->
+    <div class="col-md-6 project-card">
+      <div class="card">
+        <img src="Project1.png" class="card-img-top" alt="Project 1">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Job Search WebApp</h5>
+          <p class="card-text">Developed a comprehensive job search web application to connect job seekers with employers. The application includes functionalities for user authentication, job posting, job applications, and profile management.</p>
+          <a href="https://github.com/Amit-Verma5262/Job-Search-WebApp" target="_blank" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-md-6 project-card">
+      <div class="card">
+        <img src="Project2.jpg" class="card-img-top" alt="Project 2">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Multifactor Authentication Login</h5>
+          <p class="card-text">User-friendly login experience with multi Factor Authentication and is developed with HTML, CSS, Javascript, React, Node.js Express.js, bcrypt and Nodemailer which provides data security and authentication </p>
+          <a href="https://github.com/Amit-Verma5262/Multi-Factor-Authentication" target="_blank" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="col-md-6 project-card">
+      <div class="card">
+        <img src="Project3.jpg" class="card-img-top" alt="Project 3">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Discord Chatbot</h5>
+          <p class="card-text">This bot is built to solve queries on the Discord server and is hosted on Replit.</p>
+          <a href="https://replit.com/@Amit-Verma5262/ChatBot" target="_blank" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- Project 4 -->
+    <div class="col-md-6 project-card">
+      <div class="card">
+        <img src="Project4.jpg" class="card-img-top" alt="Project 4">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Event Management Webapp</h5>
+          <p class="card-text">This is a MERN stack project that provides information about events happening near the user's location.</p>
+          <a href="https://amit-verma5262.github.io/Portfolio/" target="_blank" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  <!-- skills section -->
 
@@ -134,9 +144,9 @@
 
   <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
     <div class="col d-flex flex-column align-items-start gap-2">
-      <h2 class="text-body-emphasis">I am adept at creating responsive and innovative solutions to complex problems</h2>
+      <h2 class="text-body-emphasis">I am a passionate MERN stack web developer with expertise in MongoDB, Express.js, React, and Node.js</h2>
       <p class="text-body-secondary">I possess a diverse skill set encompassing frontend and backend development, UI/UX design, version control, and expertise in IoT, robotics, and automation. With proficiency in modern technologies and frameworks</p>
-      <a href="#" class="btn btn-primary btn-lg" id="resume">Resume</a>
+      <a href="https://drive.google.com/file/d/14IFxjO3UU_JGbwJwLKHKDPG1LkTv94u0/view?usp=drive_link" target="_blank" class="btn btn-primary btn-lg" id="resume">Resume</a>
     </div>
 
     <div class="col ">
@@ -216,33 +226,36 @@
 
  <!-- Footer section -->
  
- <footer class="footer text-white text-center py-4">
-   <div class="container-footer">
-    <div class="row footer_row">
-      <div class="col-sm-4">
+ <!-- Footer section -->
+<footer class="footer text-white text-center py-4 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-0">
         <h5>Contact Me</h5>
         <p><i class="fa-solid fa-envelope"></i> Email: amitverma5262.02@gmail.com</p>
         <p><i class="fas fa-phone"></i> Phone: +91 9696012181</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-3 mb-sm-0">
         <h5>Follow Me</h5>
-        <a href="https://www.linkedin.com/in/amit-verma-1b5677249/" class="social-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/AmitVerma7062" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/_amitverma5262_/?next=%2F" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/amit-verma-1b5677249/" class="social-icon mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://twitter.com/AmitVerma7062" class="social-icon mx-2" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/_amitverma5262_/?next=%2F" class="social-icon mx-2" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
       </div>
       <div class="col-sm-4">
         <h5>Location</h5>
-        <p>JSS Science and technology University, Mysuru, India</p>
+        <p>JSS Science and Technology University, Mysuru, India</p>
       </div>
     </div>
-   </div>
- </footer> 
- <!-- Copyrights --> 
-    <div class="text-center">
-      <p>&copy; 2024 Amit Verma. All Rights Reserved.</p>
-    </div>
-
   </div>
+</footer>
+<!-- Copyrights -->
+<div class="text-center py-2 bg-dark text-white">
+  <p>&copy; 2024 Amit Verma. All Rights Reserved.</p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9y5Z4ntzFfG4MOdZqv7XwDsZKNdJ4FzG5O4P/OL+Qk1p7D7YQJ5" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     <script src="index.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script>
