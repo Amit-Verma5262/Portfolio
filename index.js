@@ -36,3 +36,6 @@ function typeHeading() {
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(typeHeading, 2000); 
 });
+
+
+
